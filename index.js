@@ -71,10 +71,6 @@ $(document).ready(function () {
     }, intervalInMilliseconds);
   });
 
-  $(".modal-overlay").click(function () {
-    $(".modal-overlay").hide();
-    $(".modal").hide();
-  });
 });
 
 $(document).ready(function () {

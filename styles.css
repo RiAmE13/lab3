@@ -59,6 +59,11 @@ html {
   align-items: center;
 }
 
+#table-input {
+    background-color: #f0f0f0; 
+    padding-block: 10px;
+}
+
 table {
   border-collapse: collapse;
   margin: 20px 0;
