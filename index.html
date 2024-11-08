@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторна робота 3</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style></style>
+  </head>
+  <body>
+    <div id="image-container">
+      <img
+        id="image-display"
+        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+        alt="Image"
+      />
+    </div>
+
+    <!-- Модальне вікно для введення інтервалу -->
+    <div class="modal-overlay"></div>
+    <div class="modal">
+      <h3>Введіть інтервал змінення зображень (в секундах):</h3>
+      <input type="number" id="interval-input" placeholder="Секунди" />
+      <button id="start-button">Старт</button>
+    </div>
+
+    <section id="table-task">
+      <div>
+        <label for="min">Мінімальне значення:</label>
+        <input type="number" id="min" placeholder="Наприклад, 1" />
+
+        <label for="max">Максимальне значення:</label>
+        <input type="number" id="max" placeholder="Наприклад, 100" />
+
+        <button id="generate">Створити таблицю</button>
+      </div>
+      <div id="table-container"></div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
